@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edmon blog</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/edmonblog_application.css' %}"
+    />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <h1><a href="/">Edmon Blog</a></h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col">{% block content %} {% endblock %}</div>
+      </div>
+    </main>
+  </body>
+</html>
